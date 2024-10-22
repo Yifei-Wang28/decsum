@@ -1,6 +1,6 @@
 # Decision-Focused Summarization
 
-Impletmentation of our EMNLP2021 paper, Decision-Focused Summarization [paper link](https://arxiv.org/abs/2109.06896).
+Partial replication (failthfulness) of Decision-Focused Summarization [paper link](https://arxiv.org/abs/2109.06896).
 
 ## Env
 Create env with conda:
@@ -46,20 +46,13 @@ The DecSum summaries will be saved at `${RES_DIR}/models/sentence_select/selecte
 
 *_MSE with True Label_* metric will be store at `${RES_DIR}/models/sentence_select/results/yelp/50reviews/test/Transformer/window_1_DecSum_WD_sentbert_50trunc_1_1_1/best/1/text_.csv`.
 
-## Get Decision Scores for Individual Sentences
-> Change env variables in `scripts/single_sentence_score.sh`  before running. This step takes about an hour on RTX3090.
-
-```
-# at base Directory
-bash scripts/single_sentence_score.sh
-```
-Results will be saved at `${RES_DIR}/models/sentence_select/selected_sentence/yelp/50reviews/test/Transformer/window_1/order/10000/text_.csv`.
-Sentences are in the original order for each restaurants (business).
-
 ## Baseline methods
-cleaning 
-## Generating Experiment Plots
-cleaning
+> Change env variables in `scripts/sentence_select_rand.sh`  before running Random Selection. This step takes about 1.5 hours on RTX3090.
+
+```
+at base Directory
+bash scripts/sentence_selection_rand.sh
+```
 
 # Citation
 ```
