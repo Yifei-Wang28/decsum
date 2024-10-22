@@ -50,7 +50,7 @@ The DecSum summaries will be saved at `${RES_DIR}/models/sentence_select/selecte
 > Change env variables in `scripts/sentence_select_rand.sh`  before running Random Selection. This step takes about 1.5 hours on RTX3090.
 
 ```
-at base Directory
+# at base Directory
 bash scripts/sentence_selection_rand.sh
 ```
 
